@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Stock App</title>
+</head>
+<body>
+    <div>
+        <h1>Post Stock App</h1>
+
+        <h2>Upload CSV Files</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <p>Enter Warehouse ID</p>
+            <input type="text" id="wareid" name="wareid" placeholder="warehouse id">
+            <br>
+            <br>
+            <div>
+                <label for="file-upload-1">SSS.csv</label>
+                <input type="file" id="file-upload-1" name="file1" accept=".csv" class="form-control">
+            </div>
+            <div>
+                <label for="file-upload-2">GCIJKT.csv</label>
+                <input type="file" id="file-upload-2" name="file2" accept=".csv" class="form-control">
+            </div>
+            <br>
+            <button type="submit">Combine and Clean Data</button>
+        </form>
+    </div>
+</body>
+</html>
